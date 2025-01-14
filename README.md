@@ -78,3 +78,35 @@ Produces
 ```py
 0
 ```
+
+## Notes for the Interviewer
+
+### Clarifying Questions
+
+#### Q: Are the characters in the string guaranteed to be upper or lower case?
+
+A: No, the characters may be of mixed case (either upper case or lower case).
+
+#### Q: Will there be any other kinds of characters present in the string?
+
+A: Yes, the string may contain special characters such as numbers, spaces, dollar signs ($), octothorpe (#), etc.
+
+### Hints
+
+- If your candidate struggles with an initial algorithm, encourage them to walk through an example and describe how they would do it using only pen and paper.
+
+- If your candidate struggles writing a recursive function, ask how they would implement the function iteratively.
+
+- If your candidate still struggles, suggest to them the use of the `ord` function in python. This function can be used to determine the unicode value of a character.
+
+- Inform the candidate that the unicode value of uppercase letters is 65 -> 90 (letter A is 65 and letter Z is 90) and the unicode value of lowercase letters is from 97 to 122 (letter a is 97 and letter z is 122).
+
+## Optional Bonus At-Home Challenges
+
+To be attempted after completing the interview.
+
+- What are the time/space complexities of the sample solution?
+
+- If you wrote the function with a chain of if statements (checking for each type of consonant), try using the ord() function to complete the challenge.
+
+- If you wrote the function iteratively, try writing the function recursively.
