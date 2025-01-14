@@ -12,6 +12,8 @@ For example, the string `"abc de"` has 3 consonants (b, c, and d), and the strin
 
 **Use recursion** to solve this problem. As a reminder, a recursive function is one that calls itself.
 
+Note that this problem is *not* intrinsically well-suited to recursion. It is possible and more efficient to solve this problem without recursion, but the goal is to practice using recursion.
+
 ## Examples
 
 ### Example 1
