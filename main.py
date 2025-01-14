@@ -1,5 +1,22 @@
+def is_consonant(ch):
+    ch = ch.upper()
+    return (
+        not (ch == 'A' or ch == 'E' or ch == 'I' or ch == 'O' or ch == 'U') 
+        and ord(ch) >= 65 and ord(ch) <= 90
+    )
+
+def count_helper(characters, n):
+    if n == 1:
+        return 1 if is_consonant(characters[0]) else 0
+
+    currentCharacterCount = 1 if is_consonant(characters[n - 1]) else 0
+    
+    return count_helper(characters, n - 1) + currentCharacterCount
+
 def consonant_count(characters):
-    pass
+    if len(characters) < 1:
+        return 0
+    return count_helper(characters, len(characters))
 
 
 ### Test Case #1
